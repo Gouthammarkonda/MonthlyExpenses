@@ -1,192 +1,191 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_67546_monthly_ex_monthly_expenses" version="3">
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_67546_monthly_ex_daily_expenses" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Draft</label>
+            <label>Bus fare</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>10</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:12:18</sys_created_on>
+            <sys_created_on>2018-05-03 03:32:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>712781da4fbddf40a0a27bb28110c7a1</sys_id>
+            <sys_id>14db411e4fbddf40a0a27bb28110c7bb</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:28</sys_updated_on>
-            <value>10</value>
+            <sys_updated_on>2018-05-03 03:34:43</sys_updated_on>
+            <value>bus fare</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Requested for approval</label>
+            <label>Train fare</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>20</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:12:36</sys_created_on>
+            <sys_created_on>2018-05-03 03:32:52</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c137059a4fbddf40a0a27bb28110c79c</sys_id>
+            <sys_id>40eb055e4fbddf40a0a27bb28110c73d</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:31</sys_updated_on>
-            <value>20</value>
+            <sys_updated_on>2018-05-03 03:34:47</sys_updated_on>
+            <value>train fare</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Manager approved</label>
+            <label>Air fare</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>30</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:13:00</sys_created_on>
+            <sys_created_on>2018-05-03 03:33:05</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>fd47015a4fbddf40a0a27bb28110c7ca</sys_id>
+            <sys_id>2eeb49da4fbddf40a0a27bb28110c7b3</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:35</sys_updated_on>
-            <value>30</value>
+            <sys_updated_on>2018-05-03 03:34:50</sys_updated_on>
+            <value>air fare</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Manager rejected</label>
+            <label>Cab fare</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>40</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:13:11</sys_created_on>
+            <sys_created_on>2018-05-03 03:33:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a35741da4fbddf40a0a27bb28110c76b</sys_id>
+            <sys_id>79fb81de4fbddf40a0a27bb28110c71b</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:38</sys_updated_on>
-            <value>40</value>
+            <sys_updated_on>2018-05-03 03:34:53</sys_updated_on>
+            <value>cab fare</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Finance approved</label>
+            <label>Auto fare</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>50</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:13:23</sys_created_on>
+            <sys_created_on>2018-05-03 03:33:41</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4a674d9a4fbddf40a0a27bb28110c756</sys_id>
+            <sys_id>ba0c85de4fbddf40a0a27bb28110c7b9</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:41</sys_updated_on>
-            <value>50</value>
+            <sys_updated_on>2018-05-03 03:34:56</sys_updated_on>
+            <value>auto fare</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Finance rejecgted</label>
+            <label>Food</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>60</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:13:33</sys_created_on>
+            <sys_created_on>2018-05-03 03:33:52</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4177c19a4fbddf40a0a27bb28110c77e</sys_id>
+            <sys_id>221c45de4fbddf40a0a27bb28110c75f</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:44</sys_updated_on>
-            <value>60</value>
+            <sys_updated_on>2018-05-03 03:34:59</sys_updated_on>
+            <value>food</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Amount relesed</label>
+            <label>Hotel</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>70</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:13:44</sys_created_on>
+            <sys_created_on>2018-05-03 03:34:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6f778d9a4fbddf40a0a27bb28110c73a</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_id>452c05de4fbddf40a0a27bb28110c75f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:47</sys_updated_on>
-            <value>70</value>
+            <sys_updated_on>2018-05-03 03:35:04</sys_updated_on>
+            <value>hotel</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Closed</label>
+            <label>Hostel</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>80</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:14:06</sys_created_on>
+            <sys_created_on>2018-05-03 03:34:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>da8741da4fbddf40a0a27bb28110c76b</sys_id>
+            <sys_id>ed3c09de4fbddf40a0a27bb28110c790</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:51</sys_updated_on>
-            <value>80</value>
+            <sys_updated_on>2018-05-03 03:35:08</sys_updated_on>
+            <value>hostel</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>state</element>
+            <element>type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Cancelled</label>
+            <label>Room rent</label>
             <language>en</language>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sequence>90</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:14:17</sys_created_on>
+            <sys_created_on>2018-05-03 03:34:31</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>bf97c1da4fbddf40a0a27bb28110c73e</sys_id>
+            <sys_id>004c49de4fbddf40a0a27bb28110c73a</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:14:54</sys_updated_on>
-            <value>90</value>
+            <sys_updated_on>2018-05-03 03:35:13</sys_updated_on>
+            <value>room rent</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>state</element>
-            <name>x_67546_monthly_ex_monthly_expenses</name>
+            <element>type</element>
+            <name>x_67546_monthly_ex_daily_expenses</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-03 03:12:18</sys_created_on>
-            <sys_id>0d37c1da4fbddf40a0a27bb28110c736</sys_id>
+            <sys_created_on>2018-05-03 03:32:42</sys_created_on>
+            <sys_id>37db0dda4fbddf40a0a27bb28110c72f</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>state</sys_name>
+            <sys_name>type</sys_name>
             <sys_package display_value="Monthly Expenses new" source="x_67546_monthly_ex">c57309d64fbddf40a0a27bb28110c7d0</sys_package>
             <sys_policy/>
             <sys_scope display_value="Monthly Expenses new">c57309d64fbddf40a0a27bb28110c7d0</sys_scope>
-            <sys_update_name>sys_choice_x_67546_monthly_ex_monthly_expenses_state</sys_update_name>
+            <sys_update_name>sys_choice_x_67546_monthly_ex_daily_expenses_type</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-03 03:12:18</sys_updated_on>
+            <sys_updated_on>2018-05-03 03:32:42</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

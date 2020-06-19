@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>date</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Daily Exp Date Validation</name>
+        <order>100</order>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	var sel_date =  new Date(newValue);
+// 	var par = g_form.getValue('monthly_exp');
+// 	var ga = new GlideAjax('MonthlyExpensesUtilsClient');
+// 	ga.addParam('sysparm_name','getParentMonthYear');
+// 	ga.addParam('parent_sys_id',par);
+// 	ga.getXML(getParentDetails);
+	
+// 	function getParentDetails(response){
+// 		var answer = response.responseXML.documentElement.getAttribute("answer").split(':');
+// 		console.log("answer: "+answer.toString());
+// 		if(sel_date.getFullYear() != answer[0] || sel_date.getMonth() != answer[1]){
+// 			g_form.clearValue('date');
+// 			g_form.showErrorBox('date','Please select the date between selected Month and Year');
+// 		}else{
+// 			g_form.hideErrorBox('date');
+// 		}
+		
+// 	}
+	var m_month = g_form.getValue('month');
+	var m_year = g_form.getValue('year');
+	if(sel_date.getFullYear() != m_year || sel_date.getMonth() != m_month){
+		g_form.clearValue('date');
+		g_form.showErrorBox('date','Please select the date between selected Month and Year');
+	}else{
+		g_form.hideErrorBox('date');
+	}
+	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-04 02:45:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e6a906664f7d1380a0a27bb28110c754</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Daily Exp Date Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Monthly Expenses new" source="x_67546_monthly_ex">c57309d64fbddf40a0a27bb28110c7d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Monthly Expenses new">c57309d64fbddf40a0a27bb28110c7d0</sys_scope>
+        <sys_update_name>sys_script_client_e6a906664f7d1380a0a27bb28110c754</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-04 03:15:40</sys_updated_on>
+        <table>x_67546_monthly_ex_daily_expenses</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

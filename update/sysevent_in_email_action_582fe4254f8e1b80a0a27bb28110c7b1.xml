@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Manager Approval</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+	// Implement email action here
+	var number = email.body.number;
+	var status = email.body.status;
+	var sysid ='';
+	var gr = new GlideRecord(current.getTableName());
+	gr.get(number);
+	gr.query();
+	if(gr.next()){
+		gr.comments = email.body_text;
+		sysid = gr.sys_id;
+		gr.update();
+	}
+	// Implement email action here
+	var sa = new GlideRecord('sysapproval_approver');
+	sa.addQuery('document_id',sysid);
+	sa.query();
+	sa.next();
+	
+	sa.state = status.toString();
+	//sa.comments = comments;
+	sa.update();
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-13 03:57:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>582fe4254f8e1b80a0a27bb28110c7b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manager Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Monthly Expenses new" source="x_67546_monthly_ex">c57309d64fbddf40a0a27bb28110c7d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Monthly Expenses new">c57309d64fbddf40a0a27bb28110c7d0</sys_scope>
+        <sys_update_name>sysevent_in_email_action_582fe4254f8e1b80a0a27bb28110c7b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-13 03:57:12</sys_updated_on>
+        <table>x_67546_monthly_ex_monthly_expenses</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

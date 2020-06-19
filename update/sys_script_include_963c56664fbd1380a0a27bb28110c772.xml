@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_67546_monthly_ex.MonthlyExpServer</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MonthlyExpServer</name>
+        <script><![CDATA[var MonthlyExpServer = Class.create();
+MonthlyExpServer.prototype = {
+    initialize: function() {
+    },
+
+	getTotalAmount : function(par){
+		var total = 0;
+		var grd = new GlideRecord('x_67546_monthly_ex_daily_expenses');
+		grd.addQuery('monthly_exp',par);
+		grd.query();
+		while(grd.next()){
+			var amt = parseFloat(grd.amount);
+			total += amt;
+		}
+		gs.info('month total 25: '+total);
+		return total;
+	},
+	setTotalBalance : function(total,par){
+		gs.info("month 29: "+total);
+		var grp = new GlideRecord('x_67546_monthly_ex_monthly_expenses');
+		grp.addQuery('sys_id',par);
+		grp.query();
+		if(grp.next()){
+			gs.info("month 34: ");
+			var currencyCodeBal = grp.balance_amount.getCurrencyCode();
+			var currencyCodeTot = grp.total_amouont.getCurrencyCode();
+		
+			var adv = parseFloat(grp.advance_amount);
+			var bal = parseFloat(total) - adv;
+			
+			grp.total_amouont.setDisplayValue(total);
+			grp.balance_amount.setDisplayValue(bal);
+			
+			
+			grp.update();
+		}
+	},
+
+    type: 'MonthlyExpServer'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-04 04:03:00</sys_created_on>
+        <sys_id>963c56664fbd1380a0a27bb28110c772</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>MonthlyExpServer</sys_name>
+        <sys_package display_value="Monthly Expenses new" source="x_67546_monthly_ex">c57309d64fbddf40a0a27bb28110c7d0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Monthly Expenses new">c57309d64fbddf40a0a27bb28110c7d0</sys_scope>
+        <sys_update_name>sys_script_include_963c56664fbd1380a0a27bb28110c772</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-06 03:43:27</sys_updated_on>
+    </sys_script_include>
+</record_update>

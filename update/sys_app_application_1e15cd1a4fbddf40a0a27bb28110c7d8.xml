@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_app_application">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
     <sys_app_application action="INSERT_OR_UPDATE">
         <active>true</active>
         <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
@@ -8,14 +7,14 @@
         <hint/>
         <name>Monthly Expenses New</name>
         <order>100</order>
-        <roles>x_67546_monthly_ex.monthly_expenses_user</roles>
+        <roles>x_67546_monthly_ex.monthly_expenses_user,x_67546_monthly_ex.enduser,x_67546_monthly_ex.finance,x_67546_monthly_ex.manager</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-03 03:03:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e15cd1a4fbddf40a0a27bb28110c7d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Monthly Expenses New</sys_name>
         <sys_overrides/>
         <sys_package display_value="Monthly Expenses new" source="x_67546_monthly_ex">c57309d64fbddf40a0a27bb28110c7d0</sys_package>
@@ -23,7 +22,7 @@
         <sys_scope display_value="Monthly Expenses new">c57309d64fbddf40a0a27bb28110c7d0</sys_scope>
         <sys_update_name>sys_app_application_1e15cd1a4fbddf40a0a27bb28110c7d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-03 03:03:05</sys_updated_on>
+        <sys_updated_on>2018-05-12 15:35:42</sys_updated_on>
         <title>Monthly Expenses New</title>
         <view_name/>
     </sys_app_application>
